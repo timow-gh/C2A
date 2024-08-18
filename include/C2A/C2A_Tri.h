@@ -25,7 +25,7 @@
 
   The authors may be contacted via:
 
-  US Mail:             E. Larsen
+  US Mail:             S. Gottschalk
                        Department of Computer Science
                        Sitterson Hall, CB #3175
                        University of N. Carolina
@@ -38,28 +38,17 @@
 
 \**************************************************************************/
 
-#ifndef C2A_MODEL_H
-#define C2A_MODEL_H
-#include "C2A/LinearMath.h"
+#ifndef C2A_TRI_H
+#define C2A_TRI_H
 
-struct ModelTri {
-  double p0[3], p1[3], p2[3];
-  double n[3];
-};
+#include "PQP_Compile.h"
 
-class Model {
-  int ntris;
-  ModelTri *tri;
-  int display_list;
+struct C2A_Tri : public Tri {
 
-public:
-  Model(const char *tris_file);
-  ~Model();
-  void Draw();
-  void DrawTri(int index);
-  void CenterOfMass();
+  inline int *Index() { return &(index_[0]); }
 
-  Coord3D com;
+private:
+  int index_[3];
 };
 
 #endif

@@ -1,9 +1,9 @@
 # C2A
 
-C2A is a continuous collision detection (CCD) library written in C++ for rigid polygon soup models. 
+C2A is a continuous collision detection (CCD) library written in C++ for rigid polygon soup models.
 
-The code is written using Visual C++ 9.0 in MS Windows and is not tested on other platforms yet.
-To run the code, VC++ 9.0 is needed.
+[![linux](https://github.com/timow-gh/C2A/actions/workflows/linux.yml/badge.svg)](https://github.com/timow-gh/C2A/actions/workflows/linux.yml)
+[![windows](https://github.com/timow-gh/C2A/actions/workflows/windows.yml/badge.svg?branch=master)](https://github.com/timow-gh/C2A/actions/workflows/windows.yml)
 
 ## Dependencies
 C2A depends on **PQP**.
